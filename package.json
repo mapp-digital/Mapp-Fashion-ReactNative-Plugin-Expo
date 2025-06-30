@@ -1,6 +1,12 @@
 {
-  "name": "dressipi-sdk-expo-storage",
-  "version": "1.0.0",
+  "name": "Mapp-Fashion-React-Native-SDK-Expo",
+  "author": "Mapp Digital <productmanagement@mapp.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapp-digital/Mapp-Fashion-ReactNative-Plugin-Expo.git"
+  },
+  "homepage": "https://github.com/mapp-digital/Mapp-Fashion-ReactNative-Plugin-Expo#readme",
+  "version": "0.1.0",
   "description": "Expo Storage SDK for Dressipi integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -30,7 +36,6 @@
     "react-native",
     "expo"
   ],
-  "author": "",
   "license": "MIT",
   "files": [
     "dist",
