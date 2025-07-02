@@ -14,16 +14,14 @@ The `SecureStoreAdapter` ensures that sensitive authentication data is stored se
 
 First, make sure you have the main Dressipi SDK installed:
 
-(Naming of packages currently in the works)
-
 ```bash
-npm install @dressipi/sdk-react-native
+npm install mapp-fashion-react-native-sdk
 ```
 
 ### Install the Plugin
 
 ```bash
-npm install @dressipi/sdk-expo-storage
+npm install mapp-fashion-react-native-sdk-expo
 ```
 
 ### Install Expo SecureStore
@@ -42,8 +40,8 @@ Import the `SecureStoreAdapter` and pass it to your `DressipiProvider`:
 
 ```typescript
 import React from 'react';
-import { DressipiProvider } from '@dressipi/sdk-react-native';
-import { SecureStoreAdapter } from '@dressipi/sdk-expo-storage';
+import { DressipiProvider } from 'mapp-fashion-react-native-sdk';
+import { SecureStoreAdapter } from 'mapp-fashion-react-native-sdk-expo';
 
 const App = () => {
   return (

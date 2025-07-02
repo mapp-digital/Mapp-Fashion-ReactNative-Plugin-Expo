@@ -6,7 +6,7 @@
     "url": "https://github.com/mapp-digital/Mapp-Fashion-ReactNative-Plugin-Expo.git"
   },
   "homepage": "https://github.com/mapp-digital/Mapp-Fashion-ReactNative-Plugin-Expo#readme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Expo Storage SDK for Dressipi integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
