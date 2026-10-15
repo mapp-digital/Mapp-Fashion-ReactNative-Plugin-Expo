@@ -32,6 +32,16 @@ This plugin requires Expo SecureStore as a peer dependency:
 npx expo install expo-secure-store
 ```
 
+Install SecureStore in the app using `expo install` so Expo selects the version
+compatible with your app's Expo SDK. Version 0.1.2 uses the app's SecureStore peer
+dependency instead of installing its own native module. The peer range accepts
+SecureStore 14.2.3 and later, including Expo SDK 57's 57.x releases.
+
+When upgrading from 0.1.1, install version 0.1.2 or later and remove any
+`expo-secure-store` override scoped to this package. Run
+`npx expo install expo-secure-store` again and check `npm ls expo-secure-store` to confirm that the
+plugin shares the app's copy.
+
 ## Usage
 
 ### Basic Setup
@@ -64,15 +74,23 @@ export default App;
 The `SecureStoreAdapter` works out of the box with no additional configuration required. The SDK will automatically handle:
 
 - Credential storage and retrieval
-- Token refresh management  
+- Token refresh management
 - Secure cleanup on logout
 - Error handling and fallbacks
 
 ## Requirements
 
-- React Native with Expo
-- iOS 10.0+ or Android API level 21+
-- Expo SecureStore (automatically handles platform requirements)
+- React Native 0.84.0 through 0.87.x (`>=0.84.0 <0.88.0`)
+- React 19.2.3 or a compatible later React 19 release (`^19.2.3`)
+- Node.js 22.13.0 or later, subject to your React Native and Expo SDK requirements
+- Expo configured for your React Native version, with its compatible Expo SecureStore installed in the app
+- iOS and Android versions supported by your app's React Native and Expo SDK versions
+
+The development baseline is React Native 0.86.3, React 19.2.3, Expo SDK 57, and
+Expo SecureStore 57.0.4. The React Native peer range permits 0.84–0.87; each app
+must use a compatible Expo SDK and SecureStore version. See the
+[Expo SDK reference](https://docs.expo.dev/versions/latest/) for SDK compatibility
+and platform requirements.
 
 ## Troubleshooting
 
